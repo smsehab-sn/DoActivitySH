@@ -15,6 +15,9 @@
         android:theme="@style/Theme.DoActivitySH"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".Network"
             android:exported="false" />
         <activity
@@ -30,7 +33,7 @@
             android:name=".NotesTakeActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".splashscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
