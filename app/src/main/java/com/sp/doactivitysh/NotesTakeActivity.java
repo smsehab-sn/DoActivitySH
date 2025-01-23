@@ -53,17 +53,17 @@ public class NotesTakeActivity extends AppCompatActivity {
         }
 
 
-        network.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent intent = new Intent(NotesTakeActivity.this, com.sp.doactivitysh.network.class);
-                startActivity(intent);
+       network.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+
+               Intent intent = new Intent(NotesTakeActivity.this, Network.class);
+               startActivity(intent);
 
 
-            }
-        });
-
+           }
+       });
 
 
 
