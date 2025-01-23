@@ -27,6 +27,7 @@ public class NotesTakeActivity extends AppCompatActivity {
     Notes notes;
 
     boolean isOldNotes = false;
+    ImageView network;
 
 
 
@@ -37,7 +38,7 @@ public class NotesTakeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_notes_take);
 
 
-
+        network = findViewById(R.id.network);
         saveBtn = findViewById(R.id.savebtn);
         titleED = findViewById(R.id.titleEdt);
         notesED = findViewById(R.id.noteEdt);
@@ -50,6 +51,18 @@ public class NotesTakeActivity extends AppCompatActivity {
         }catch (Exception e){
             e.printStackTrace();
         }
+
+
+        network.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(NotesTakeActivity.this, com.sp.doactivitysh.network.class);
+                startActivity(intent);
+
+
+            }
+        });
 
 
 
